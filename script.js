@@ -67,7 +67,7 @@ const displayGeoDetails = async (ipAddress) => {
   document.getElementById("long").innerHTML = `<b>Long</b> : ${long}`;
   document.getElementById("city").innerHTML = `<b>City</b> : ${geoData.city}`;
   document.getElementById("region").innerHTML = `<b>Region</b> : ${geoData.region}`;
-  document.getElementById("hostname").innerHTML = `<b>Hostname</b> : `;
+  document.getElementById("hostname").innerHTML = `<b>Hostname</b> : ${location.hostname}`;
   document.getElementById(
     "organisation"
   ).innerHTML = `<b>Organisation:</b> ${geoData.org}`;
