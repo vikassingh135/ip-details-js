@@ -16,58 +16,56 @@
     <link rel="stylesheet" href="style.css" />
     <title>IP-DATA</title>
   </head>
-  <body>
+  <body class="body-light">
     <main>
       <!--heading  -->
       <div class="heading">
         <h2 id="ip-address">My Public IP Address :</h2>
+        <button id="theme">
+          <span class="material-symbols-outlined" id="dark-mode">
+            dark_mode </span
+          >
+        </button>
       </div>
 
       <!-- get data btn -->
       <div class="get-data-btn">
-        <button id="get-data-btn" onclick="getData()">Get Data</button>
+        <button id="get-data-btn" class="get-data-btn-light" onclick="getData()">Get Data</button>
       </div>
 
       <!-- content section -->
       <div class="content">
         <div class="geolocation-details">
-          <div id="lat">Lat:</div>
+          <div id="lat"></div>
 
-          <div id="city">City:</div>
+          <div id="city"></div>
 
-          <div id="organisation">Organisation:</div>
+          <div id="organisation"></div>
 
-          <div id="long">Long:</div>
+          <div id="long"></div>
 
-          <div id="region">Region:</div>
+          <div id="region"></div>
 
-          <div id="hostname">Hostname:</div>
+          <div id="hostname"></div>
         </div>
 
         <div id="map"></div>
       </div>
 
       <div class="time-pincode">
-        <div id="timezone">
-          <b>Time Zone:</b>
-        </div>
-        <div id="date-time">
-          <b>Data And Time:</b>
-        </div>
-        <div id="pincode">
-          <b>Pincode:</b>
-        </div>
-        <div id="message">
-          <b>Message:</b>
-        </div>
+        <div id="timezone"></div>
+        <div id="date-time"></div>
+        <div id="pincode"></div>
+        <div id="message"></div>
       </div>
 
-      <div class="searh-box">
+      <div class="search-box-light" id="search-box">
         <span class="material-symbols-outlined" id="search-icon"> search </span>
         <input type="search" id="search-pin" placeholder="Filter" />
       </div>
 
-      <div id="pincode-details"></div>
+      <div id="pincode-details" class="pincode-details-light">
+      </div>
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
